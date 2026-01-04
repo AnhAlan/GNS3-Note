@@ -1,0 +1,11 @@
+On Windows, all GNS3 login information is stored in the AppData folder.
+ 
+Press Windows + R, type %appdata%, and press Enter, then go to Roaming → GNS3 → 2.2. 
+
+Inside this folder, open the file gns3_server.ini with Notepad or any text editor. 
+
+This file contains the username and password used by GNS3 for web UI login, and also allows you to change the default port (3080) if it conflicts with another program.
+
+You can enable or disable authentication or modify HTTPS settings here. After making changes, restart GNS3 for them to take effect. 
+
+This is the place to check or adjust login configuration if GNS3 asks for credentials when accessing http://localhost:3080.
