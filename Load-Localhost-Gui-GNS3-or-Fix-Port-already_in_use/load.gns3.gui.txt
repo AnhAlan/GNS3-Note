@@ -2,7 +2,7 @@ Basic Auth URL format:
 http://admin:your_password@127.0.0.1:3080/
 
 - your_password is stored in:
-  C:\Users\admin\AppData\Roaming\GNS3\2.2\gns3_server.ini
+  C:\Users\admin\AppData\Roaming\GNS3\2.2\gns3_server.ini (usually)
 
 Example:
 http://admin:1234@127.0.0.1:3080/
