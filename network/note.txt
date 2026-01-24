@@ -1,0 +1,8 @@
+# Network folder for GNS3 VM
+# File: sample.network.gns3.txt
+# - Interface: eth0
+# - Currently using DHCP (recommended for stability)
+# - Static IP / gateway / DNS lines are commented out
+# - Do NOT enable static IP unless necessary for testing
+# - Renderer: networkd
+# - YAML format: be careful with indentation when editing

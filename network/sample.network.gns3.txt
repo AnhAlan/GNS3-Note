@@ -1,0 +1,16 @@
+# This file describes the network interfaces available on your system
+#
+# For more information, see netplan(5).
+#
+# Uncomment the following lines if you want to manually configure your network
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: yes            # Bật DHCP để nhận IP tự động
+#      addresses: [192.168.56.100/24]   # IP tĩnh cho eth0
+#      gateway4: 192.168.56.1           # Default gateway
+#      nameservers:
+#        addresses: [8.8.8.8, 8.8.4.4] # DNS server
