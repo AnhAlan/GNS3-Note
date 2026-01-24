@@ -1,0 +1,24 @@
+Check if port 3080 is already in use (Windows)
+
+1. Check which process is using port 3080:
+   netstat -ano | findstr :3080
+
+2. Look at the PID in the last column.
+   Example:
+   TCP 127.0.0.1:3080 LISTENING 5012
+
+3. Identify the process name (optional):
+   tasklist | findstr 5012
+
+4. Kill the process using port 3080:
+   taskkill /PID 5012 /F
+
+5. Verify the port is free:
+   netstat -ano | findstr :3080
+
+If nothing is returned, the port is free.
+
+Notes:
+- Do NOT run gns3server.exe twice
+- GNS3 GUI already starts gns3server automatically
+- Port conflict will cause HTTP 401 / connection refused

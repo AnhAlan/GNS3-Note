@@ -1,0 +1,4 @@
+- 401 Unauthorized: wrong username/password
+- 404 Not Found: wrong Web UI path
+- ERR_CONNECTION_REFUSED: server not running or port conflict
+- [Errno 10048]: port already in use

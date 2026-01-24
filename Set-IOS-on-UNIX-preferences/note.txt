@@ -1,24 +1,28 @@
 Copy the file CiscoIOUKeygen3f.py to the GNS3 VM (VMware).
-SSH into the GNS3 VM and run the file using python3.
 
-After running the script, a file named iourc.txt will be created in the same directory.
-Open the iourc.txt file, you will see a line like:
+SSH into the GNS3 VM and run:
+python3 CiscoIOUKeygen3f.py
 
-gns3vm = "something" -> ( ex: gns3vm = "abcdxavava" copy all that )
+After running the script, a file named iourc.txt will be created
+in the same directory.
 
-Copy the text inside the quotation marks.
+Open iourc.txt, you will see something like:
 
-Open the GNS3 application on your host machine.
-Go to Edit -> Preferences -> IOS on UNIX.
-Paste the copied text into the IOU licence (iourc file) field.
+[license]
+hostname = abcdef1234567890;
+
+Copy the entire license line (hostname = ...;)
+
+Open GNS3 on the host machine.
+Go to:
+Edit -> Preferences -> IOS on UNIX
+
+Paste the copied content into the IOU license (iourc) field.
 Click Apply, then OK.
 
-Now you can run IOU images from the GNS3 VM (VMware).
+Now IOU images can run from the GNS3 VM.
 
 Notes:
-
-The GNS3 VM must be running
-
-The license is tied to the VM, not the host machine
-
-If the VM is changed or recreated, generate the license again
+- The GNS3 VM must be running
+- The license is tied to the VM, not the host
+- If the VM is recreated, generate the license again
